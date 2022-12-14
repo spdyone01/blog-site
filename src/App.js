@@ -4,14 +4,14 @@ import {
   Route,
   Outlet,
 } from 'react-router-dom';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Single from './pages/Single';
-import Write from './pages/Write';
+import Home from './pages/Home/Home';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
+import Single from './pages/Single/Single';
+import Write from './pages/Write/Write';
 
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 import './App.scss';
 
@@ -51,15 +51,7 @@ const router = createBrowserRouter([
   {
     path: '/register',
     element: <Register />,
-  },
-  {
-    path: '/single',
-    element: <Single />,
-  },
-  {
-    path: '/write',
-    element: <Write />,
-  },
+  }
 ]);
 
 function App() {
